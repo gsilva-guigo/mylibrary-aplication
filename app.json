@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "MyLibrary",
+    "slug": "mylibrary",
+    "scheme": "mylibrary",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.gsilvaguigo.mylibrary"
+    },
+    "android": {
+      "package": "com.gsilvaguigo.mylibrary",
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sharing",
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "O MyLibrary usa a câmera para fotografar a folha de rosto dos seus livros e ler título, autor e editora.",
+          "photosPermission": "O MyLibrary usa suas fotos para ler a folha de rosto de livros já fotografados.",
+          "microphonePermission": false
+        }
+      ]
+    ]
+  }
+}
